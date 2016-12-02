@@ -1,0 +1,12 @@
+basePath: /
+host: '[fcce:a977:eee3:6ebf:1f21:0000:0000:0001]:9876'
+info:
+  contact: {email: casey.oneill@gmail.com, name: cponeill}
+  description: Get the average income based on IP location.
+  title: Pinpoint
+  x-21-app-image: https://cdn.filepicker.io/api/file/RzAVMSH6SUKsQ91Id96n
+  x-21-category: utilities
+  x-21-quick-buy: 21 buy http://[fcce:a977:eee3:6ebf:1f21:0000:0000:0001]:9876/get?ip=ip_address
+  x-21-total-price: {max: 1000, min: 1000}
+schemes: [http]
+x-21-manifest-path: /manifest
