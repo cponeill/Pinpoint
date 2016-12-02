@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# Loading Developer Libraries
+# Loading developer libraries
+
 import json
 import os
 
@@ -17,7 +18,7 @@ payment = Payment(app, wallet)
 # Load the key
 key = os.environ.get('KEY')
 
-# Call the "FetchData" object and charge 2500 satoshi per request
+# Call the "FetchData" object and charge 1000 satoshi per request
 @app.route('/get')
 @payment.required(1000)
 def get_endpoint():

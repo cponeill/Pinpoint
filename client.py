@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
+# Loading developer libraries
 from two1.wallet import Wallet
 from two1.bitrequests import BitTransferRequests
 
+# Configure wallet and requests library
 wallet = Wallet()
 requests = BitTransferRequests(wallet)
 
