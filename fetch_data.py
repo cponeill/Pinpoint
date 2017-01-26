@@ -12,8 +12,8 @@ __version__ = "0.01"
 __maintainer__ = "cponeill"
 __email__ = "cponeill@blockshare.io"
 
-
 #!/usr/bin/env python3
+#Loading developer libraries
 import requests
 import json
 
@@ -25,6 +25,10 @@ class FetchData(object):
         return None
 
     def income_by_ip(self, api_key):
+        """
+        Input: API Key and IP address request.
+        Output: JSOP-encoded output of geo-location and average income of IP address. 
+        """
         ip = request.args.get('ip')
         headers = {"X-Mashape-Key": api_key, "Accept": "application/json"}
         response = requests.get("https://income.p.mashape.com/api/income/" + ip, headers=headers)
