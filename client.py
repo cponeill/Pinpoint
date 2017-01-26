@@ -24,7 +24,10 @@ requests = BitTransferRequests(wallet)
 server_url = 'http://[::]:9876/'
 
 def get_data():
-
+    """
+    Input: IP address
+    Output: JSON response of server geo-location and average income.
+    """
     ip_addr = input()
     sel_url = server_url+'get?ip={0}'
     response = requests.get(url=sel_url.format(ip_addr))
