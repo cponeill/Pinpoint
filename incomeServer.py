@@ -26,6 +26,7 @@ def get_endpoint():
     Input: IP address
     Output: JSON with geo-location and average income
             details of the IP address.
+    response = {'ip_address': ___ {'geo-location': ___ }}
     """
     ip = request.args.get('ip')
     response = get_object.FetchData().income_by_ip(key)
