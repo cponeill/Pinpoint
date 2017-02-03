@@ -12,6 +12,7 @@ def get_data():
     """
     Input: IP address
     Output: JSON response of server geo-location and average income.
+    response = {'ip_address': ___ {'geo-location': ___ }}
     """
     ip_addr = input()
     sel_url = server_url+'get?ip={0}'
